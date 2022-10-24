@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Login</title>
+    <title>Register</title>
 </head>
 <body>
 <h1>Login</h1>
@@ -10,8 +10,8 @@
 <form method="post" action="">
     {% csrf_token %}
     {{form.as_p}}
-    <input type="submit" value="Login">
+    <input type="submit" value="Register">
 </form>
-<p>Don't have an account? <a href="{% url 'register' %}">Sign up</a></p>
+<p>Already have an account? <a href="{% url 'login' %}">Sign in</a></p>
 </body>
 </html>
